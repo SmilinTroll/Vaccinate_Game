@@ -44,6 +44,7 @@ else
 if (cooldown > 0) cooldown--; 
 
 //Move in four directions when pressing arrow keys.
+// Change arrow keys to WASD
 if (keyboard_check(vk_left))	x-= spd;
 if (keyboard_check(vk_right))	x+= spd;
 if (keyboard_check(vk_up))		y-= spd;
