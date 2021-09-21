@@ -1,2 +1,2 @@
 //restart game on collision with enemy
-game_restart();
+//game_restart();

@@ -1,7 +1,7 @@
 //Reduce enemy hitpoints on collision
 with(other)
 {
-	hp--;
+	doses++;
 	hit = 1;
 }
 
