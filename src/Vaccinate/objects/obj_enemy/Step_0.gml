@@ -13,9 +13,9 @@ if(infected)
 	{
 		for (var i = 0; i < _num; ++i;)
 		{
-			if (!_list[i].infected)
+			if (!_list[| i].infected)
 			{
-				_list[i].exposure = true;
+				_list[| i].infected = true;
 			}
 		}
     }
