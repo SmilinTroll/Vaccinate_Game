@@ -6,6 +6,7 @@ HPCheck(instance_destroy);
 
 if(infected)
 {
+	//infect others
 	var _list = ds_list_create();
 	var _num = collision_circle_list(x, y, 100, obj_enemy, false, true, _list, false);
 	
@@ -15,14 +16,39 @@ if(infected)
 		{
 			if (!_list[| i].infected)
 			{
-				_list[| i].infected = true;
+				//show_debug_message("exposure");
+				_list[| i].infection += delta_time/1000000;
 			}
 		}
     }
 	ds_list_destroy(_list);
+	
+	//lose health
+	hp -= delta_time/1000000;
+	
+	if(hp <= 0)
+	{
+		global.myscore -= 1;
+		instance_destroy(self);
+	}
 }
 
-if(exposure)
+if (infection >= 2)
 {
-	alarm[0] = room_speed;	
+	
+	rand = random(100);
+	//show_debug_message("check infection");
+	//show_debug_message(rand);
+	if(doses >= 2 && rand >= 95)
+	{
+		show_debug_message("breakthrough");
+		show_debug_message(rand);
+		infected = true;
+	}
+	else if (doses == 1 && rand >= 83)
+		infected = true;
+	else if (doses == 0 && rand >= 25 )
+		infected = true;
+	else
+		infection = 0.0;
 }

@@ -1,9 +1,13 @@
 //Reduce enemy hitpoints on collision
 with(other)
 {
-	doses++;
-	hit = 1;
+	if (!infected)
+	{
+		doses++;
+		hit = 1;
+	}
 }
+//hi
 
 //destroy the bullet
 instance_destroy();

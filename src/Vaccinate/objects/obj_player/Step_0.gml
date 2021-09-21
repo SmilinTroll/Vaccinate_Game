@@ -7,29 +7,24 @@ if (mouse_check_button(mb_left))
 	{
 		//reduce ammo of special weapon if necessary
 		ammo--;
-		if (ammo < 1) weapon = 0;
+		if (ammo < 1) 
+		{
+			weaponspd = 40;
+			//weapon = 0;
+		}
+		bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet);
 		
-		//fire normal weapon (1 bullet)
-		if (weapon == 0)
-		{
-			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet);
-		}
-		else
-		{
-			//fire special weapon (3 bullets split)
-			instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-			with (bullet)
-			{
-				direction-=15;
-			}
-			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-			with (bullet)
-			{
-				direction+=15;
-			}
-		}
 		//set cooldown to current weaponspeed
+		cooldown = weaponspd;
+	}
+}
+
+else if (mouse_check_button(mb_right))
+{
+	if(ammo >= 1 && cooldown == 0)
+	{
+		ammo --;
+		bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
 		cooldown = weaponspd;
 	}
 }
