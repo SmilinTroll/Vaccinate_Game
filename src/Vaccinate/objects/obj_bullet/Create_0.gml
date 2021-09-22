@@ -5,3 +5,5 @@ direction += random_range(-4,4);
 //Set speed & image angle
 speed = 16;
 image_angle = direction;
+image_xscale = .5;
+image_yscale = .5;
