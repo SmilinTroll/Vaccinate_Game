@@ -12,8 +12,6 @@ function Karen_Movement(){
 	
 	//Angle sprite based on direction
 	image_angle = direction;
-	
-
 }
 
 
