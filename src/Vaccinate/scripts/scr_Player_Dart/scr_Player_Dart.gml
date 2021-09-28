@@ -8,13 +8,6 @@ function Player_Dart(){
 		spd = 2;
 		if (cooldown == 0)
 		{
-			//reduce ammo of special weapon if necessary
-			ammo--;
-			if (ammo < 1) 
-			{
-				weaponspd = 40;
-				//weapon = 0;
-			}
 			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet);
 		
 			//set cooldown to current weaponspeed

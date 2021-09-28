@@ -33,7 +33,7 @@ if(infected)
 	}
 }
 
-if (infection >= 2)
+if (infection >= infectionTime)
 {
 	
 	rand = random(100);
@@ -41,14 +41,24 @@ if (infection >= 2)
 	//show_debug_message(rand);
 	if(doses >= 2 && rand >= 95)
 	{
-		show_debug_message("breakthrough");
-		show_debug_message(rand);
 		infected = true;
+		winCondition = 0.0;
 	}
 	else if (doses == 1 && rand >= 83)
+	{
 		infected = true;
+		winCondition = 0.0;
+	}
 	else if (doses == 0 && rand >= 25 )
+	{
 		infected = true;
+		winCondition = 0.0
+	}
 	else
 		infection = 0.0;
+}
+
+else if (doses >= 2 && !infected && winCondition < winTime)
+{
+	winCondition += delta_time/1000000;	
 }
