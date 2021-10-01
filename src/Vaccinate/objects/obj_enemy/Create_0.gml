@@ -10,7 +10,7 @@ winCondition = 0.0;
 infection = 0.0
 infectionTime = 3;
 winTime = 10;
-collisionDistance = 60;
+collisionDistance = 80;
 
 rand = random(5);
 if(rand >= 4)
