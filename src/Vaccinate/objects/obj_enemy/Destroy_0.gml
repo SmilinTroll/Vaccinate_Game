@@ -2,6 +2,10 @@
 if(winCondition > 0)
 {
 	global.myscore++;
+	if(global.mentalHealth < 95)
+		global.mentalHealth += 5;
+	else
+		global.mentalHealth = 100;
 }
 
 else

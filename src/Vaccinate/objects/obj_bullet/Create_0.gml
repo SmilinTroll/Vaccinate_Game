@@ -1,6 +1,6 @@
 //Point towards mouse, randomize slightly
 direction = point_direction(x,y,mouse_x,mouse_y)
-direction += random_range(-4,4);
+direction += random_range(-(100 -global.mentalHealth)/3 , (100 - global.mentalHealth)/3);
 
 //Set speed & image angle
 speed = 16;

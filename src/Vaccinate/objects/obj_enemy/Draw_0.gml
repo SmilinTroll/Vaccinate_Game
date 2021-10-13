@@ -6,5 +6,10 @@ draw_sprite_ext(spr_enemy_flash,0,x,y,image_xscale,image_yscale,image_angle,c_wh
 if(infected)
 	draw_sprite_ext(spr_enemy_red,0,x,y,image_xscale,image_yscale,image_angle,c_white, 0.5);
 
-else if(vaccinated)
-	draw_sprite_ext(spr_enemy_blue,0,x,y,image_xscale,image_yscale,image_angle,c_white, 0.5);
+else
+{
+	if ( doses > 2)
+		draw_sprite_ext(spr_enemy_blue,0,x,y,image_xscale,image_yscale,image_angle,c_white, 0.5);
+	else
+		draw_sprite_ext(spr_enemy_blue,0,x,y,image_xscale,image_yscale,image_angle,c_white, doses/4);
+}
