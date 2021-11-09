@@ -23,7 +23,7 @@ function Karen_Movement(){
 		{
 			global.mentalHealth -= delta_time/1000000 * 5;
 			if (infected)
-				global.infection += delta_time/1000000;
+				global.infection += delta_time/1000000 * 0.25;
 		}
 		
 	}
