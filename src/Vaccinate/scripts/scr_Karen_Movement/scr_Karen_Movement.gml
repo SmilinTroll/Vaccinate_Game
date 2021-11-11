@@ -21,7 +21,7 @@ function Karen_Movement(){
 			move_towards_point(x, y, 0);
 		if( scr_distance (obj_player.x, obj_player.y, x, y) < 100 )
 		{
-			global.mentalHealth -= delta_time/1000000 * 5;
+			global.mentalHealth -= delta_time/1000000 * 20;
 			if (infected)
 				global.infection += delta_time/1000000 * 0.25;
 		}

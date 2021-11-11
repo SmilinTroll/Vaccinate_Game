@@ -29,7 +29,7 @@ if(infected)
 	if(hp <= 0)
 	{
 		global.myscore -= 1;
-		global.mentalHealth -= 5;
+		global.mentalHealth -= 10;
 		instance_destroy(self);
 	}
 }

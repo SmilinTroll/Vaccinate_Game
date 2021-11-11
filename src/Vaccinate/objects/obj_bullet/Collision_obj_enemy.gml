@@ -7,10 +7,10 @@ with(other)
 		hit = 1;
 		if(doses < 2 && global.mentalHealth < 100)
 		{
-			if(global.mentalHealth >= 99)
+			if(global.mentalHealth > 97)
 				global.mentalHealth = 100
 			else
-				global.mentalHealth += 1;
+				global.mentalHealth += 3;
 		}
 	}
 }
