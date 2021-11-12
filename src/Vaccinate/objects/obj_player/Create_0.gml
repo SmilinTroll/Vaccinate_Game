@@ -8,3 +8,4 @@ global.ammo = 0;				//when ammo reaches zero, return to default weapon (unlimite
 cooldown = 0;			//able to fire again when cooldown reaches zero (based on weaponspd)
 global.mentalHealth = 100;
 global.infection = 0;
+global.paused = false;
