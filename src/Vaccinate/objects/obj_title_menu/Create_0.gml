@@ -1,7 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-width = 64;
+width = 64*2;
 height = 64;
+x = 565;
+y = 768/2 - 32;
+
 
 op_border = 8;
 op_space = 32;

@@ -47,7 +47,6 @@
     {"id":{"name":"scr_Karen_Movement","path":"scripts/scr_Karen_Movement/scr_Karen_Movement.yy",},"order":0,},
     {"id":{"name":"scr_Collision_Check","path":"scripts/scr_Collision_Check/scr_Collision_Check.yy",},"order":4,},
     {"id":{"name":"rm_default","path":"rooms/rm_default/rm_default.yy",},"order":0,},
-    {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},"order":1,},
   ],
   "Options": [
     {"name":"Amazon Fire","path":"options/amazonfire/options_amazonfire.yy",},
@@ -78,7 +77,6 @@
     {"roomId":{"name":"rm_titlescreen","path":"rooms/rm_titlescreen/rm_titlescreen.yy",},},
     {"roomId":{"name":"rm_default","path":"rooms/rm_default/rm_default.yy",},},
     {"roomId":{"name":"rm_instructions","path":"rooms/rm_instructions/rm_instructions.yy",},},
-    {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -104,7 +102,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.6.595",
+    "IDEVersion": "2.3.4.580",
   },
   "resourceVersion": "1.4",
   "name": "Vaccinate",

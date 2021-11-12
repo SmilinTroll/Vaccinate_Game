@@ -14,15 +14,17 @@ else if (pos < 0)
 	
 if(accept_key)
 {
+	global.paused = false;
 	switch(pos)
 	{
 		case 0:
-			room_goto(rm_default); //start game
+			instance_activate_all();
+			instance_destroy(self); //resume
 	
 		break;
 	
 		case 1:
-			room_goto(rm_instructions);
+			room_goto(rm_titlescreen);
 	
 		break;
 	
