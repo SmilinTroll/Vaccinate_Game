@@ -18,8 +18,13 @@ if(accept_key)
 	switch(pos)
 	{
 		case 0:
+		if(global.dead)
+			room_restart();
+		else
+		{
 			instance_activate_all();
 			instance_destroy(self); //resume
+		}
 	
 		break;
 	

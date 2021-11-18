@@ -19,6 +19,7 @@
     {"id":{"name":"scr_Karen_ReduceHitFlash","path":"scripts/scr_Karen_ReduceHitFlash/scr_Karen_ReduceHitFlash.yy",},"order":2,},
     {"id":{"name":"spr_weapon","path":"sprites/spr_weapon/spr_weapon.yy",},"order":10,},
     {"id":{"name":"tileset_1","path":"tilesets/tileset_1/tileset_1.yy",},"order":0,},
+    {"id":{"name":"spr_Vaccinate_Title","path":"sprites/spr_Vaccinate_Title/spr_Vaccinate_Title.yy",},"order":17,},
     {"id":{"name":"snd_death","path":"sounds/snd_death/snd_death.yy",},"order":0,},
     {"id":{"name":"scr_HPCheck","path":"scripts/scr_HPCheck/scr_HPCheck.yy",},"order":1,},
     {"id":{"name":"Instructions","path":"sprites/Instructions/Instructions.yy",},"order":14,},

@@ -9,3 +9,4 @@ cooldown = 0;			//able to fire again when cooldown reaches zero (based on weapon
 global.mentalHealth = 100;
 global.infection = 0;
 global.paused = false;
+global.dead = false;

@@ -8,7 +8,10 @@ op_space = 32;
 
 pos = 0;
 
-option[0] = "Resume";
+if(global.dead)
+	option[0] = "Restart";
+else
+	option[0] = "Resume";
 option[1] = "Quit to Menu";
 option[2] = "Quit to Desktop";
 
