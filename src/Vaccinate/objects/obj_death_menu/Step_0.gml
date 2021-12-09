@@ -17,6 +17,7 @@ if(accept_key)
 	switch(pos)
 	{
 		case 0:
+			audio_stop_all();
 			room_goto(rm_titlescreen); //start game
 	
 		break;
