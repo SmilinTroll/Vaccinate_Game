@@ -1,4 +1,7 @@
- Karen_Movement();
+prevx = x;
+prevy = y;
+
+Karen_Movement();
 
 Karen_ReduceHitFlash();
 
@@ -62,4 +65,24 @@ if (infection >= infectionTime)
 else if (doses >= 2 && !infected && winCondition < winTime)
 {
 	winCondition += delta_time/1000000;	
+}
+
+self.insult += delta_time/1000000;
+
+if(self.insult >= 2)
+{
+	self.insult = 0;
+	if(random(100) < 10)
+	{
+		speechID = instance_create_layer(x,y-200,"lay_speech",obj_speechbubble);
+	}
+}
+
+if(instance_exists(speechID))
+{
+	with(speechID)
+	{
+		x = other.x;
+		y = other.y - 200;
+	}
 }

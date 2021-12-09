@@ -7,6 +7,15 @@ repeat(6)
 		instance_create_layer(tempX,tempY,"lay_enemy",obj_enemy);
 }
 
+if(random(100)<20)
+{
+	tempX = random(room_width);
+	tempY = random(room_height);
+	instance_create_layer(tempX,tempY,"lay_pickups",obj_weapon);
+}
+
+
+
 //Decrease time between spawns
 timer = max (timer-timer_dec,timer_min);
 

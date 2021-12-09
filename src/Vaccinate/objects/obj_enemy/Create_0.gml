@@ -11,6 +11,10 @@ infection = 0.0
 infectionTime = 3;
 winTime = 10;
 collisionDistance = 80;
+insult = 0.0;
+
+speechID = 0;
+
 
 rand = random(5);
 if(rand >= 4)
