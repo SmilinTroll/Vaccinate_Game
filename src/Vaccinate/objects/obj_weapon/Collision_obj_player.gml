@@ -1,4 +1,5 @@
 //Change player's weapon on collision
+audio_play_sound(pickupgrenede, 0, 0);
 with (obj_player)
 {
 	//weapon = 1;

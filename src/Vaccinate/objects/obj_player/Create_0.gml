@@ -10,3 +10,4 @@ global.mentalHealth = 100;
 global.infection = 0;
 global.paused = false;
 global.dead = false;
+audio_play_sound(gamemusic, 0, 100);

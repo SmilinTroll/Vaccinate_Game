@@ -18,7 +18,9 @@ if(accept_key)
 	switch(pos)
 	{
 		case 0:
+		audio_stop_all();
 		if(global.dead)
+			
 			room_restart();
 		else
 		{
@@ -29,6 +31,7 @@ if(accept_key)
 		break;
 	
 		case 1:
+			audio_stop_all();
 			room_goto(rm_titlescreen);
 	
 		break;

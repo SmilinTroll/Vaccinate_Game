@@ -10,6 +10,7 @@
 		hp = 10;
 	}
 	*/
+	audio_play_sound(Cure_Explotsion, 0, 0);
 	var _list = ds_list_create();
 	var _num = collision_circle_list(x, y, 400, obj_enemy, false, true, _list, false);
 	

@@ -5,6 +5,7 @@ function Player_Grenade(){
 	{
 		if(global.ammo >= 1 && cooldown == 0)
 		{
+			audio_play_sound(firegrenede, 0, 0);
 			global.ammo --;
 			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
 			cooldown = weaponspd;

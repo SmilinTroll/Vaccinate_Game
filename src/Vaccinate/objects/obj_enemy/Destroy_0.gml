@@ -13,7 +13,12 @@ else
 	//Create fragments and enemy splatter on death
 	
 	repeat(choose(5,8)) instance_create_layer(x,y,"lay_enemy",obj_fragment);
-	with (instance_create_layer(x,y,"lay_splatter",obj_splatter)) image_angle = other.direction;
+	with (instance_create_layer(x,y,"lay_splatter",obj_splatter))
+	{
+		image_angle = 180;
+		image_xscale = -0.33;
+		image_yscale = -0.33;
+	}
 
 	//Play sound
 	audio_sound_pitch(snd_death,random_range(0.8,1.2));

@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 5,
-  "bbox_right": 236,
-  "bbox_top": 102,
-  "bbox_bottom": 142,
+  "bbox_left": 7,
+  "bbox_right": 447,
+  "bbox_top": 15,
+  "bbox_bottom": 445,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 256,
-  "height": 256,
+  "width": 500,
+  "height": 500,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d83134ef-7bc8-4dea-848e-84b850465b32","path":"sprites/spr_Vaccinate_Title/spr_Vaccinate_Title.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d83134ef-7bc8-4dea-848e-84b850465b32","path":"sprites/spr_Vaccinate_Title/spr_Vaccinate_Title.yy",},"LayerId":{"name":"c4196d54-3af3-4dc3-af31-26adc7b3be48","path":"sprites/spr_Vaccinate_Title/spr_Vaccinate_Title.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Vaccinate_Title","path":"sprites/spr_Vaccinate_Title/spr_Vaccinate_Title.yy",},"resourceVersion":"1.0","name":"d83134ef-7bc8-4dea-848e-84b850465b32","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1c81d6d3-980f-468d-8463-fc021fdb5c7b","path":"sprites/spr_credits/spr_credits.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1c81d6d3-980f-468d-8463-fc021fdb5c7b","path":"sprites/spr_credits/spr_credits.yy",},"LayerId":{"name":"35421483-b254-4b63-9b49-33912b65da08","path":"sprites/spr_credits/spr_credits.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_credits","path":"sprites/spr_credits/spr_credits.yy",},"resourceVersion":"1.0","name":"1c81d6d3-980f-468d-8463-fc021fdb5c7b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_Vaccinate_Title","path":"sprites/spr_Vaccinate_Title/spr_Vaccinate_Title.yy",},
+    "spriteId": {"name":"spr_credits","path":"sprites/spr_credits/spr_credits.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"208484b0-5035-4449-958f-dedb18971087","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d83134ef-7bc8-4dea-848e-84b850465b32","path":"sprites/spr_Vaccinate_Title/spr_Vaccinate_Title.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ea3cd2f0-9cd2-427a-a615-bcb5db7b903d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c81d6d3-980f-468d-8463-fc021fdb5c7b","path":"sprites/spr_credits/spr_credits.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,20 +58,20 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_Vaccinate_Title","path":"sprites/spr_Vaccinate_Title/spr_Vaccinate_Title.yy",},
+    "parent": {"name":"spr_credits","path":"sprites/spr_credits/spr_credits.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_Vaccinate_Title",
+    "name": "spr_credits",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c4196d54-3af3-4dc3-af31-26adc7b3be48","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"35421483-b254-4b63-9b49-33912b65da08","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": {
     "left": 0,
     "top": 0,
     "right": 0,
-    "bottom": 132,
+    "bottom": 0,
     "guideColour": [
       4294902015,
       4294902015,
@@ -80,7 +80,7 @@
     ],
     "highlightColour": 1728023040,
     "highlightStyle": 0,
-    "enabled": true,
+    "enabled": false,
     "tileMode": [
       0,
       0,
@@ -97,7 +97,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_Vaccinate_Title",
+  "name": "spr_credits",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -11,7 +11,7 @@ for (var i = 0; i < op_length; i++)
 {
 	var c = c_white;
 	if (pos == i)
-		c = c_yellow;
+		c = c_aqua;
 	
 	draw_text_color(x+op_border, y+op_border + op_space*i, option[i], c, c, c, c, 1);	
 }
